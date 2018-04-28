@@ -3,7 +3,7 @@ LABEL maintainer="Michael Lynch <michael@mtlynch.io>"
 
 # Enable support for Chrome
 ARG DEBIAN_FRONTEND=noninteractive
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+RUN wget --quiet https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     apt-get update && \
     apt install ./google-chrome-stable_current_amd64.deb -y
 
