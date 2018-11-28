@@ -8,7 +8,7 @@ RUN wget --quiet https://dl.google.com/linux/direct/google-chrome-stable_current
     apt install ./google-chrome-stable_current_amd64.deb -y
 
 # Install protractor and dependencies.
-ARG PROTRACTOR_VERSION=5.3.1
+ARG PROTRACTOR_VERSION=5.4.1
 RUN apt-get install -y openjdk-8-jdk libgconf-2-4 && \
     apt-cache search jdk && \
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk && \
