@@ -1,4 +1,4 @@
-FROM node:9-stretch
+FROM node:10-stretch
 LABEL maintainer="Michael Lynch <michael@mtlynch.io>"
 
 # Enable support for Chrome
