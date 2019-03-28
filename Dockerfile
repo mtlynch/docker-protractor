@@ -11,7 +11,7 @@ RUN set -x && \
     apt install ./google-chrome-stable_current_amd64.deb --yes
 
 # Install protractor and dependencies.
-ARG PROTRACTOR_VERSION=5.4.1
+ARG PROTRACTOR_VERSION=6.0.0
 RUN set -x && \
     apt-get install --yes \
       openjdk-8-jdk \
